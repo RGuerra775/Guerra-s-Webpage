@@ -11,33 +11,24 @@
 <body>
         <strong class="logo-n">Guerra's Webpage</strong>
         <strong class="logo-y">Welcome Aboard!</strong>
+        <div class="div-btn"><button class="btn-login" onclick="show1Element()">Login as root</button></div>
         <!--Login modal-->
        <div class="login-div">
             <h2><strong>LOGIN</strong></h2>
             <form>
                 <div class="input-div">
-                    <input type="text" required><label id="username">Username</label>
+                    <input type="text" id="username" required><label>Username</label>
                 </div>
                 <div class="input-div">
-                    <input type="text" required><label id="password">Password</label>
+                    <input type="password" id="password" required><label>Password</label>
                 </div>
                 <h3 class="h3a">Username/Password incorrect</h3>
-                <div class="div-submit" onclick="validate()">
-                <a>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    Submit
-                  </a>
+                <div class="div-submit">
+                  <input type="submit" value="Submit" onclick="validate()">
                 </div>
-                  <p class="guest">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                  <a class="guest" href="https://rguerra775.github.io/Personal-website/main/index">
                     Continue as guest
-                  </p>
+                  </a>
             </form>
        </div> 
        <script src="script.js"></script>
