@@ -209,14 +209,14 @@ body {
 }
 /*--Mobile phone version landscape--*/
 
-@media all and (min-device-width: 440px) and (max-device-height: 802px) and (orientation:landscape)
+@media all and (min-device-width:320px) and (max-device-width:900px) and (orientation:landscape)
 {
 
 }
 
 /*--Mobile phone version portrait--*/
 
-@media all and (min-device-width: 440px) and (max-device-height: 802px) and (orientation:portrait)
+@media all and (min-device-width: 370px) and (max-device-height: 900px) and (orientation:portrait)
 {
     .login-div {
         width: 350px;
@@ -301,3 +301,88 @@ body {
                     0 0 30px #af4eff;
     }
 }   
+@media all and (max-device-width: 369px) and (orientation:portrait)
+{
+    .login-div {
+        width: 84vw;
+        transition: .3s;
+        top: 50%;
+        left: 50%;
+        position: absolute;
+        visibility: hidden;
+        animation-name: fadeIn, sizeUp;
+        animation-fill-mode: forwards;
+        animation-duration: 2s;
+        box-shadow: -15px 15px 7px rgba(0,0,0,.5);
+    }
+    @keyframes sizeUp{
+        from {
+            transform: scale(0) translate(-50%, -50%);
+        }
+        to {
+            transform: scale(1) translate(-50%, -50%);
+        }
+    }
+    .btn-login {
+        visibility: visible;
+        background: transparent;
+    }
+    .logo-n {
+        font-size: 18px;
+        width: 30%;
+        margin: 0;
+    }
+    .logo-y {
+        font-size: 18px;
+        width: 30%;
+        margin: 0;
+        right: 0;
+    }
+    .login-div h2 {
+        font-size: 35px;
+    }
+    .login-div h3 {
+        font-size: 14px;
+    }
+    .login-div .input-div input {
+        font-size: 16px;
+    }
+    .login-div .input-div label {
+        font-size: 20px;
+    }
+    .login-div .input-div input:focus ~ label , 
+    .login-div .input-div input:valid ~ label {
+        top: -26px;
+        font-size: 16px;
+    }
+    .login-div .div-submit input {
+        padding: 7px 51px;
+        font-size: 18px;
+        transition: .5s;
+        margin-top: 5px;
+        letter-spacing: 3px;
+    }
+    .login-div .div-submit input:hover {
+        background: #af4eff;
+        color: #fff;
+        font-weight: bolder;
+        border-radius: 2px;
+        box-shadow: 0 0 5px #af4eff,
+                    0 0 20px #af4eff,
+                    0 0 30px #af4eff;
+    }
+    .guest {
+        width: 172px;
+        padding: 4px 6.3px;
+        font-size: 14px;
+    }
+    .guest:hover {
+        background: #af4eff;
+        color: #fff;
+        font-weight: bolder;
+        border-radius: 2px;
+        box-shadow: 0 0 5px #af4eff,
+                    0 0 20px #af4eff,
+                    0 0 30px #af4eff;
+    }
+}
